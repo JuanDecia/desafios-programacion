@@ -8,8 +8,8 @@ El repositorio está organizado por lenguaje de programación y, dentro de cada 
 
 ``` bash
   /
-  ├── python/                            # Lenguaje  Prioncipal
-  │  ├── 1-variables/                    # Tema
+  ├── python/                            # Lenguaje  Principal
+  │  ├── 1-variables y Tipo de Datos/    # Tema
   │  │  ├── README.md                    # Enunciado y explicación
   │  │  ├── variables-desafio.py         # Código
   │  └── ... 
