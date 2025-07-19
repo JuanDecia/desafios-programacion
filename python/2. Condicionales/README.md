@@ -49,14 +49,15 @@ Salida: "El número es negativo"
   cd python/2-condicionales/[nombre-desafío]
 ```
 
-*Ejecuta el script:
+* Ejecuta el script:
 
 ```bash
-  python solucion.py
+  python [nombre-desafio]
 ```
 
 ## 🏆 Desafíos Propuestos
 *(Este listado se actualizará conforme se añadan ejercicios)*
 1. `conversor-crypto` → Convierte una moneda según el tipo de Crypto.
+2. `ordenar-crypto` → Ordena las monedas según la cantidad.
 
 ---
