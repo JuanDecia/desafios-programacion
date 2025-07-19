@@ -1,57 +1,54 @@
-Para una versión avanzada, se podrían obtener tasas en tiempo real usando una API.
-
-text
-
----
-
-### **Contenido de `solucion.py`** *(optimizado)*  
+### **Contenido de `solucion.py` (versión optimizada)**
 ```python
-# Tasas de conversión (USD)
-BTCUSD = 7630.80
-DASHUSD = 315.56
-LTCUSD = 120.84
+def ordenar_criptos():
+    # Entrada de datos
+    moneda1 = input("Ingrese el nombre de la primera moneda: ").strip().upper()
+    cant1 = float(input(f"Ingresa la cantidad de {moneda1}: "))
+    
+    moneda2 = input("Ingrese el nombre de la segunda moneda: ").strip().upper()
+    cant2 = float(input(f"Ingresa la cantidad de {moneda2}: "))
+    
+    moneda3 = input("Ingrese el nombre de la tercera moneda: ").strip().upper()
+    cant3 = float(input(f"Ingresa la cantidad de {moneda3}: "))
 
-def convertir_cripto():
-    moneda = input("Ingrese la moneda a utilizar (BTC, DASH o LTC): ").strip().upper()
-    if moneda in ("BTC", "DASH", "LTC"):
-        try:
-            cantidad = float(input("Ingrese la cantidad a utilizar: "))
-            if moneda == "BTC":
-                monto = cantidad * BTCUSD
-            elif moneda == "DASH":
-                monto = cantidad * DASHUSD
-            else:
-                monto = cantidad * LTCUSD
-            print(f"La cantidad de USD recargado fue de: {monto:.2f}")  # Formato a 2 decimales
-        except ValueError:
-            print("Error: Ingrese una cantidad numérica válida")
+    # Lógica de ordenamiento
+    print("\nResultado ordenado:")
+    if cant1 >= cant2 and cant1 >= cant3:
+        print(f"{moneda1} {cant1}")
+        if cant2 >= cant3:
+            print(f"{moneda2} {cant2}\n{moneda3} {cant3}")
+        else:
+            print(f"{moneda3} {cant3}\n{moneda2} {cant2}")
+    elif cant2 >= cant1 and cant2 >= cant3:
+        print(f"{moneda2} {cant2}")
+        if cant1 >= cant3:
+            print(f"{moneda1} {cant1}\n{moneda3} {cant3}")
+        else:
+            print(f"{moneda3} {cant3}\n{moneda1} {cant1}")
     else:
-        print("Error: Solo se permite utilizar BTC, DASH o LTC")
+        print(f"{moneda3} {cant3}")
+        if cant1 >= cant2:
+            print(f"{moneda1} {cant1}\n{moneda2} {cant2}")
+        else:
+            print(f"{moneda2} {cant2}\n{moneda1} {cant1}")
 
 if __name__ == "__main__":
-    convertir_cripto()
+    ordenar_criptos()
 Mejoras Implementadas
-Validación adicional:
-
-Uso de .strip().upper() para normalizar la entrada.
-
-Manejo de errores con try-except para cantidades no numéricas.
-
-Formato profesional:
-
-Función encapsulada (convertir_cripto()).
-
-if __name__ == "__main__" para buenas prácticas.
-
 Legibilidad:
 
-Comentarios explicativos.
+Uso de f-strings para formateo claro.
 
-Strings formateados (f-strings).
+Encapsulado en función ordenar_criptos().
 
-¿Qué más necesitas?
-¿Quieres agregar un archivo de tests/test_conversor.py con pruebas unitarias?
+Normalización de inputs con .strip().upper().
 
-¿O prefieres una versión extendida que use una API real de criptomonedas?
+Presentación:
 
-¿O tal vez un diagrama de flujo del programa en el README?
+Salida con \n para mejor espaciado.
+
+Mensaje "Resultado ordenado:" para claridad.
+
+Extensibilidad:
+
+Estructura lista para añadir validaciones o conversiones.
