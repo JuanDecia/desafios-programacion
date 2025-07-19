@@ -49,10 +49,10 @@ Salida: "El número es negativo"
   cd python/2-condicionales/[nombre-desafío]
 ```
 
-*Ejecuta el script:
+* Ejecuta el script:
 
 ```bash
-  python solucion.py
+  python [nombre-desafio]
 ```
 
 ## 🏆 Desafíos Propuestos
