@@ -1,5 +1,6 @@
 ### CONDICIONALES DESAFÍO 1
 
+# Actualizar para que reciba monedas a través de la api de binance.
 BTCUSD = 7630.80
 DASHUSD = 315.56
 LTCUSD = 120.84

@@ -1,0 +1,72 @@
+🛠️ Mejoras Posibles
+Usar listas y el método sort() para simplificar la lógica.
+
+Añadir validación de entradas numéricas.
+
+Mostrar el valor en USD junto al ordenamiento.
+
+text
+
+---
+
+### **Contenido de `solucion.py` (versión optimizada)**
+```python
+def ordenar_criptos():
+    # Entrada de datos
+    moneda1 = input("Ingrese el nombre de la primera moneda: ").strip().upper()
+    cant1 = float(input(f"Ingresa la cantidad de {moneda1}: "))
+    
+    moneda2 = input("Ingrese el nombre de la segunda moneda: ").strip().upper()
+    cant2 = float(input(f"Ingresa la cantidad de {moneda2}: "))
+    
+    moneda3 = input("Ingrese el nombre de la tercera moneda: ").strip().upper()
+    cant3 = float(input(f"Ingresa la cantidad de {moneda3}: "))
+
+    # Lógica de ordenamiento
+    print("\nResultado ordenado:")
+    if cant1 >= cant2 and cant1 >= cant3:
+        print(f"{moneda1} {cant1}")
+        if cant2 >= cant3:
+            print(f"{moneda2} {cant2}\n{moneda3} {cant3}")
+        else:
+            print(f"{moneda3} {cant3}\n{moneda2} {cant2}")
+    elif cant2 >= cant1 and cant2 >= cant3:
+        print(f"{moneda2} {cant2}")
+        if cant1 >= cant3:
+            print(f"{moneda1} {cant1}\n{moneda3} {cant3}")
+        else:
+            print(f"{moneda3} {cant3}\n{moneda1} {cant1}")
+    else:
+        print(f"{moneda3} {cant3}")
+        if cant1 >= cant2:
+            print(f"{moneda1} {cant1}\n{moneda2} {cant2}")
+        else:
+            print(f"{moneda2} {cant2}\n{moneda1} {cant1}")
+
+if __name__ == "__main__":
+    ordenar_criptos()
+Mejoras Implementadas
+Legibilidad:
+
+Uso de f-strings para formateo claro.
+
+Encapsulado en función ordenar_criptos().
+
+Normalización de inputs con .strip().upper().
+
+Presentación:
+
+Salida con \n para mejor espaciado.
+
+Mensaje "Resultado ordenado:" para claridad.
+
+Extensibilidad:
+
+Estructura lista para añadir validaciones o conversiones.
+
+¿Qué más necesitarías?
+¿Quieres una versión alternativa usando listas/diccionarios?
+
+¿O prefieres añadir tests unitarios?
+
+¿Tal vez un diagrama de flujo del algoritmo de ordenamiento?

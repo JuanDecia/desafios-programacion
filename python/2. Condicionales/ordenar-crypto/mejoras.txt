@@ -1,0 +1,57 @@
+Para una versión avanzada, se podrían obtener tasas en tiempo real usando una API.
+
+text
+
+---
+
+### **Contenido de `solucion.py`** *(optimizado)*  
+```python
+# Tasas de conversión (USD)
+BTCUSD = 7630.80
+DASHUSD = 315.56
+LTCUSD = 120.84
+
+def convertir_cripto():
+    moneda = input("Ingrese la moneda a utilizar (BTC, DASH o LTC): ").strip().upper()
+    if moneda in ("BTC", "DASH", "LTC"):
+        try:
+            cantidad = float(input("Ingrese la cantidad a utilizar: "))
+            if moneda == "BTC":
+                monto = cantidad * BTCUSD
+            elif moneda == "DASH":
+                monto = cantidad * DASHUSD
+            else:
+                monto = cantidad * LTCUSD
+            print(f"La cantidad de USD recargado fue de: {monto:.2f}")  # Formato a 2 decimales
+        except ValueError:
+            print("Error: Ingrese una cantidad numérica válida")
+    else:
+        print("Error: Solo se permite utilizar BTC, DASH o LTC")
+
+if __name__ == "__main__":
+    convertir_cripto()
+Mejoras Implementadas
+Validación adicional:
+
+Uso de .strip().upper() para normalizar la entrada.
+
+Manejo de errores con try-except para cantidades no numéricas.
+
+Formato profesional:
+
+Función encapsulada (convertir_cripto()).
+
+if __name__ == "__main__" para buenas prácticas.
+
+Legibilidad:
+
+Comentarios explicativos.
+
+Strings formateados (f-strings).
+
+¿Qué más necesitas?
+¿Quieres agregar un archivo de tests/test_conversor.py con pruebas unitarias?
+
+¿O prefieres una versión extendida que use una API real de criptomonedas?
+
+¿O tal vez un diagrama de flujo del programa en el README?
