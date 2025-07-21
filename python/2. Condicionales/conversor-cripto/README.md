@@ -38,9 +38,10 @@ cd python/2-condicionales/conversor-cripto
     python solucion.py
 ```
 
-## 📌 Notas
-Los valores de las criptomonedas están hardcodeados según el desafío original.
+## 📌 Mejoras a aplicar
 
-Para una versión avanzada, se podrían obtener tasas en tiempo real usando una API.
+* Caché de precios: guardar los precios en un JSON para no depender de la API.
+* Añadir más criptos.
+* Guardar historial de consultas.
 
 ---

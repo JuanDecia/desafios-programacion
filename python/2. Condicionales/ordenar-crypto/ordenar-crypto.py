@@ -1,14 +1,16 @@
-#Escribe un programa que dada tres criptomonedas y sus respectivas cantidades, imprima de 
-#forma ordenada decreciente cada moneda con sus respectivos valores.
+# Input Moneda 1
+moneda1 = input("Ingrese el nombre de la primera moneda: ")
+cant1 = float(input("Ingresa la cantidad de "+moneda1+":"))
 
-moneda1=input("Ingrese el nombre de la primera moneda: ")
-cant1=float(input("Ingresa la cantidad de "+moneda1+":"))
-moneda2=input("Ingrese el nombre de la segunda moneda: ")
-cant2=float(input("Ingresa la cantidad de "+moneda2+":"))
-moneda3=input("Ingrese el nombre de la tercera moneda: ")
-cant3=float(input("Ingresa la cantidad de "+moneda3+":"))
+# Input Moneda 2
+moneda2 = input("Ingrese el nombre de la segunda moneda: ")
+cant2 = float(input("Ingresa la cantidad de "+moneda2+":"))
 
-if cant1 > cant2 and cant1 > cant3: #if singifica "si".
+# Input Moneda 3
+moneda3 = input("Ingrese el nombre de la tercera moneda: ")
+cant3 = float(input("Ingresa la cantidad de "+moneda3+":"))
+
+if cant1 > cant2 and cant1 > cant3:
     print(moneda1,cant1)
     if cant2>cant3:
         print(moneda2,cant2)
