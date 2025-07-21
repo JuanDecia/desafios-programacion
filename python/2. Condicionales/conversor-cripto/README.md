@@ -38,6 +38,12 @@ cd python/2-condicionales/conversor-cripto
     python solucion.py
 ```
 
+## 📌 Últimas mejoras aplicadas
+
+* Petición a tiempo real del valor de las cripto.
+* Uso de Fstrings para texto claro.
+* Funciones para mantenimiento y escalabilidad.
+
 ## 📌 Mejoras a aplicar
 
 * Caché de precios: guardar los precios en un JSON para no depender de la API.

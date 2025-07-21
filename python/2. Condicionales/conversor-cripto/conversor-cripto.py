@@ -17,7 +17,7 @@ def obtener_precio():
             "DASH": data["dash"]["usd"]
         }
     except Exception as e:
-        print(f"Error al obtener el precio de {coin}: {e}.")
+        print(f"Error al obtener el precio: {e}.")
         return None
     
 # Convertir monedas a USD
