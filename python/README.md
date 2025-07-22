@@ -3,6 +3,9 @@
 Colección de desafíos de programación en **Python**, organizados por temas fundamentales. Cada carpeta contiene un ejercicio práctico con su solución y documentación.  
 
 ## 📚 Temas  
+
+0. **Desafíos Integradores**
+
 1. **Variables y Tipos de Datos**    
 
 2. **Condicionales**   

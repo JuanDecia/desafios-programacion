@@ -10,16 +10,29 @@ El repositorio está organizado por lenguaje de programación y, dentro de cada 
 
 ``` bash
   /
-  ├── python/                            # Lenguaje  Principal
-  │  ├── 1-variables y Tipo de Datos/    # Tema
-  │  │  ├── README.md                    # Enunciado y explicación
-  │  │  ├── variables-desafio.py         # Código
+  ├── python/                               # Lenguaje  Principal
+  │  ├── 0-Integradores/                    # Tema
+  │  │  ├── README.md                       # Documentacion
+  │  │  ├── [directorio-integrador]/        # Subdirectorios
+  │  │  │  ├── [nombre-desafio-integrador]  # Solución
+  │  │  │  ├── README.md
+  │  │  │  ├── ...
+  │  ├── 1-variables y Tipo de Datos/    
+  │  │  ├── README.md                    
+  │  │  ├── [directorio-desafío]             
   │  └── ... 
   ├── javascript/
-  │  ├── 1-variables/
+  │  ├── 0-Integradores/                 
   │  │  ├── README.md
-  │  │  ├── variables-desafio.py
+  │  │  ├── [directorio-integrador]/
+  │  │  │  ├── [nombre-desafio-integrador]
+  │  │  │  ├── README.md
+  │  │  │  ├── ...
+  │  ├── 1-variables y Tipo de Datos/    
+  │  │  ├── README.md                    
+  │  │  ├── [directorio-desafío]             
   │  └── ... 
+  ├── ...
 
 ```
 
