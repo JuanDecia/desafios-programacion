@@ -1,7 +1,7 @@
 # Importar libreria de cripto
 import json
 from pathlib import Path
-from pycoingecko import CoinGeckoAPI
+from pyCoingecko import CoinGeckoAPI
 
 # Obtener la ruta absoluta del directorio actual del script
 SCRIPT_DIR = Path(__file__).parent.absolute()

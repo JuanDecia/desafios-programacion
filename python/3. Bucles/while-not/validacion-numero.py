@@ -1,7 +1,3 @@
-#Escribir un programa que permita el ingreso de un número.
-#Si el usuario no ingresa un número entonces.
-#Vuelva a solicitar hasta que lo ingrese correctamente.
-
 num = input("Ingrese un número: ") #tres
 
 while not num.isdigit():
