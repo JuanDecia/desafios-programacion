@@ -39,7 +39,13 @@ Escribir un programa que:
 * Aceptar números negativos:
 
 ```python
-    while not num.lstrip('-').isdigit():
+
+    def solicitar_numero():
+        return input("Ingrese un número entero: ").strip()
+
+    Valida si la entrada es un número entero (positivo o negativo)
+    def validar_numero(entrada): 
+        return entrada.lstrip('-').isdigit()
 ```
 
 * Aceptar decimales:
@@ -56,10 +62,19 @@ Escribir un programa que:
 * Límite de intentos:
 
 ```python
+    def main():
     intentos = 3
-    while intentos > 0:
-        # ...validación...
+    numero_usuario = solicitar_numero()
+    
+    while not validar_numero(numero) and intentos > 1:
         intentos -= 1
+        print(f"❌ Entrada inválida. Intentos restantes: {intentos}")
+        numero_usuario = solicitar_numero()
+    
+    if validar_numero(numero):
+        print(f"✅ Aceptado: {int(numero)}")
+    else:
+        print("⚠️ Has agotado tus intentos")
 ```
 
 ## Este README:
