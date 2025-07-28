@@ -58,4 +58,6 @@ Salida: "El número es negativo"
 ## 🏆 Desafíos Propuestos
 *(Este listado se actualizará conforme se añadan ejercicios)*
 
+* FizzBuzz
+
 ---

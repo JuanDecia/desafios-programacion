@@ -1,6 +1,6 @@
 # 🔄 Validación de Entrada Numérica
 
-Este programa demuestra el uso de bucles `while` para validar entradas de usuario hasta que se ingrese un número válido.
+Este programa demuestra el uso del bucle `while not` para validar entradas de usuario hasta que se ingrese un número válido.
 
 ## 📝 Enunciado
 
@@ -76,6 +76,13 @@ Escribir un programa que:
     else:
         print("⚠️ Has agotado tus intentos")
 ```
+
+## 🏆 Desafíos Propuestos
+*(Este listado se actualizará conforme se añadan ejercicios)*
+
+* while-not
+
+---
 
 ## Este README:
 
