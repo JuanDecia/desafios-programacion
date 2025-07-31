@@ -15,7 +15,7 @@ Este directorio contiene ejercicios y ejemplos prácticos para dominar las estru
 
 * Uso común: Almacenar colecciones de items ordenados
 
-2. Tuplas
+### 2. Tuplas
 
 ```python
     mi_tupla = (1, "Python", False)
@@ -25,7 +25,7 @@ Este directorio contiene ejercicios y ejemplos prácticos para dominar las estru
 
 * Uso común: Datos que no deben cambiar (coordenadas, configuraciones)
 
-3. Diccionarios
+### 3. Diccionarios
 
 ```python
     mi_dict = {"clave": "valor", "BTC": "Bitcoin"}
@@ -35,7 +35,7 @@ Este directorio contiene ejercicios y ejemplos prácticos para dominar las estru
 
 * Uso común: Representar objetos complejos (ej: datos API)
 
-4. Conjuntos
+### 4. Conjuntos
 
 ```python
     mi_set = {1, 2, 3, 3}  # Resultado: {1, 2, 3}
