@@ -28,18 +28,3 @@ Implementación del clásico problema FizzBuzz que evalúa si un número es:
 * Ejecutar en terminal
 
 ## 💡 Mejoras Recomendadas
-
-# Versión con validación de entrada
-
-```python
-    while True:
-        try:
-            num = int(input("Ingrese entero: "))
-            break
-        except ValueError:
-            print("¡Debe ser un número entero!")
-
-    # Versión funcional
-    def fizzbuzz(n):
-        return "Fizz"*(n%3==0) + "Buzz"*(n%5==0) or n
-```
