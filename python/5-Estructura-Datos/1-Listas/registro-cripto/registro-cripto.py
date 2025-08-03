@@ -1,38 +1,107 @@
-#Escribe un programa que registre el nombre de cinco criptomonedas, con sus respectivas cantidades
-#y precios en USD, haciendo uso de Arreglos. Posteriormente, imprima los datos de cada moneda
-#luego de ser ingresados por el usuario.
-
-def esmoneda(cripto):
+# Recibir Cripto
+def getCripto(nombreCripto: str) -> bool:
     criptos = ["btc","bcc","ltc","eth","etc"]
-    if cripto in criptos:
+    if nombreCripto in criptos:
         return True
     else:
         return False
 
-def esnumero(numero):
+# Verifica si el valor es un número
+def isNumber(numero: str) -> bool:
     return numero.replace('.','',1).isdigit()
 
-criptos = [] #Array vacio, luego se le agregan los datos del ciclo while.
-cant = [] #Array vacio, luego se le agregan los datos del ciclo while.
-cotiz = [] #Array vacio, luego se le agregan los datos del ciclo while.
-i=0
-while i < 5:
-    criptoname = input("Ingrese el nombre de la moneda: ")
-    if esmoneda(criptoname):
-        criptos.append(criptoname) #el valor se agrega al array "criptos".
-        criptocant = ""
-        while not esnumero(criptocant):
-            criptocant=input("Ingrese la cantidad de "+criptoname+": ")
-        criptocotiz = ""
-        while not esnumero(criptocotiz):
-            criptocotiz=input("Ingrese la cotización en USD de "+criptoname+": ")
-        cant.append(criptocant)
-        cotiz.append(criptocotiz)
-        i=i+1
-    else:
-        print("Moneda invalida")
+# Calcular valores totales
+def calcularTotal(cantidades: list, valores: list) -> float:
+    return sum([float(cantidad) * float(valor) for cantidad, valor in zip(cantidades, valores)])
 
-i=0
-while i < 5:
-    print("Moneda: "+criptos[i]+", Cantidad: "+cant[i]+", Valor en USD: "+cotiz[i])
-    i=i+1
+# Mostrar resumen
+def mostrarResumen(criptos: list, cantidades: list, valores: list):
+
+    # Calcular total
+    total = calcularTotal(cantidades, valores)
+
+    print("\n" + "=" * 50)
+    print(" Resumen de la billetera" .center(50, "="))
+    print("=" * 50)
+
+    for i, (cripto, cantidad, valor) in enumerate(zip(criptos, cantidades, valores), 1):
+
+        subtotal = cantidad * valor
+        print(f"\n{i}. {cripto.upper()}:")
+        print(f"   Cantidad: {cantidad:.8f}")  # 8 decimales para cripto
+        print(f"   Valor unitario (USD): ${valor:.2f}")
+        print(f"   Subtotal: ${subtotal:.2f}")
+    
+    print("\n" + "-"*50)
+    print(f"TOTAL DE LA BILLETERA: ${total:.2f}".rjust(50))
+    print("="*50 + "\n")
+
+def cargarMonedas():
+
+    # Inicializar listas donde se guardarán los datos cargados
+    criptos = []
+    cantidades = []
+    valores = []
+
+    # Pedir al usuarios cantidad de monedas a registrar
+    num_monedas = ""
+    while True:
+        try:
+            num_monedas = int(input("¿Cuántas criptomonedas desea registrar? (min: 1 - max: 5): "))
+            if num_monedas > 0:
+                break
+            else:
+                print("Número inválido. Debe estar entre 1 y 5.")
+        except ValueError:
+            print("Entrada inválida. Por favor, ingrese un número.")
+
+    for i in range(num_monedas):
+
+        # Paso 1: Ingresa nombre
+        criptoName = input("Ingrese el nombre de la moneda (btc, bcc, ltc, eth, etc): ")
+
+        # Validar nombre de la criptomoneda
+        if getCripto(criptoName):
+            break
+        print("Moneda no válida. Intente nuevamente.")
+
+
+    # Paso 2: Ingresar cantidad
+    while True:
+        cantidad = input(f"Ingrese cantidad de {criptoName}: ")
+
+        # Validar cantidad
+        if isNumber(cantidad):
+            cantidad = float(cantidad)
+            break
+        print("Cantidad inválida. Debe ser un número.")
+
+    # Paso 3: Ingresar valor    
+    while True:
+        valor = input(f"Ingrese el valor de {criptoName} en USD: ")
+
+        # Validar valor
+        if isNumber(valor):
+            valor = float(valor)
+            break
+        print("Valor inválido. Debe ser un número.")
+
+    # Agregar a listas
+    criptos.append(criptoName)
+    cantidades.append(cantidad)
+    valores.append(valor)
+
+    # Mostrar resumen
+    mostrarResumen(criptos, cantidades, valores)
+
+# Funcion ejecutadora del programa
+def main():
+
+    print("\n" + "="*50)
+    print(" REGISTRO DE CRIPTOMONEDAS ".center(50, '='))
+    print("="*50)
+    cargarMonedas()
+
+# Inicializador del programa
+if __name__ == "__main__":
+    main()

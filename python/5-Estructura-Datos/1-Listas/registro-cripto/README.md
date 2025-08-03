@@ -1,7 +1,7 @@
 # 📊 Registro de Criptomonedas con Arreglos
 
 ## 📝 Descripción
-El programa debe permitir registrar 5 criptomonedas con sus cantidades y precios en USD, utilizando arreglos para almacenar y mostrar los datos.
+El programa debe permitir registrar de 1 a 5 criptomonedas (selección del usuario) con sus cantidades y precios en USD, utilizando arreglos para almacenar y mostrar los datos.
 
 - **Validación de monedas**: Solo acepta BTC, BCC, LTC, ETH, ETC
 - **Validación numérica**: Asegura que cantidades y precios sean valores numéricos
@@ -45,19 +45,7 @@ El programa debe permitir registrar 5 criptomonedas con sus cantidades y precios
     ]
 ```
 
-* Añadir cálculos automáticos:
-
-```python
-    valor_total = float(cant[i]) * float(cotiz[i])
-```
-
-* Implementar funciones para cada operación:
-
-```python
-    def ingresar_moneda():
-        # Lógica de ingreso
-        return moneda, cantidad, cotizacion
-```
+* Recibir cotización en tiempo real
 
 ## 🚀 Cómo Ejecutar
 
