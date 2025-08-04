@@ -32,4 +32,5 @@ Este directorio contiene ejercicios prácticos para dominar el manejo de **lista
 
 ## Ejercicios Disponibles
 
-* Registro de Criptomonedas
+* Desafío #1: Registro de Criptomonedas
+* Desafío #2: Calcular total del arreglo
