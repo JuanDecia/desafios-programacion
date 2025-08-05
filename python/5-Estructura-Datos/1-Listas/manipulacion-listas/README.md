@@ -70,7 +70,7 @@ El objetivo es imprimir diferentes posiciones de la lista, reemplazar un element
 * Ejecuta el script Python: 
 
 ```bash
-    python listas_desafio.py
+    python [nombre-desafio].py
 ```
 
 * Observa los resultados y experimenta modificando los valores

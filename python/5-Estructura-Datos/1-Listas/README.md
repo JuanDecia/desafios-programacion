@@ -11,6 +11,7 @@ Este directorio contiene ejercicios prácticos para dominar el manejo de **lista
     mi_lista = [1, "Python", True]  # Creación
     mi_lista.append(10)             # Añadir elemento
     mi_lista[1]                     # Acceso por índice (zero-based)
+    sub1 = numeros[2:5]             # Slicing
 ```
 
 ## Métodos Esenciales
@@ -19,6 +20,7 @@ Este directorio contiene ejercicios prácticos para dominar el manejo de **lista
 * insert(i, x)	Inserta x en posición i	lista.insert(0, 'a')
 * remove(x)	Elimina la primera ocurrencia de x	lista.remove('Python')
 * sort()	Ordena la lista (in-place)	lista.sort()
+* sublistas método slicing
 
 ## 📂 Estructura de Ejercicios
 
