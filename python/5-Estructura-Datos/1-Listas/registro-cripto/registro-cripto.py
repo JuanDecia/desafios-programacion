@@ -1,4 +1,4 @@
-## DESAFÍO LISTAS #1 ##
+## DESAFÍO LISTAS #2 ##
 
 # Recibir Cripto
 def getCripto(nombreCripto: str) -> bool:
