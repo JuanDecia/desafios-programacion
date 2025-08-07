@@ -1,9 +1,28 @@
-# Desafío de Manipulación de sublistas
+# 🚀 Desafío de Manipulación de sublistas
 
-## Descripción
 Este repositorio contiene un ejemplo práctico de cómo manipular sublistas en Python, demostrando diferentes técnicas de slicing y reemplazo de elementos.
 
-## 📌 Definición
+## 🎯 Objetivo del desafío
+
+El objetivo es imprimir diferentes posiciones de la lista, reemplazar un elemento e imprimir la lista con los nuevos resultados.
+
+## 🔧 Requisitos técnicos
+
+* Crear diferentes ejemplos utilizando los métodos de las sublistas
+
+* Python 3.14
+
+## 🌐 Cómo Usar
+
+* Clona este repositorio
+
+* Ejecuta el script Python: 
+
+```bash
+    python [nombre-desafio].py
+```
+
+## 📌 Definición y ejemplos sublistas
 Las sublistas (o slicing en inglés) son una técnica en Python que permite extraer, modificar o reemplazar segmentos de una lista utilizando índices. La sintaxis básica es:
 
 ```python
@@ -16,7 +35,8 @@ Las sublistas (o slicing en inglés) son una técnica en Python que permite extr
 
 * paso (opcional): Salto entre elementos. Si es negativo, recorre la lista en orden inverso.
 
-## 🔍 Ejemplo Práctico
+
+### 🔍 Ejemplo Práctico
 
 ```python
     # Definimos una lista de ejemplo
@@ -51,11 +71,7 @@ Las sublistas (o slicing en inglés) son una técnica en Python que permite extr
     print("Lista después de eliminar:", numeros)  # [10, 200, 300, 70, 80, 90]
 ```
 
-## Objetivo del desafío
-
-El objetivo es imprimir diferentes posiciones de la lista, reemplazar un elemento e imprimir la lista con los nuevos resultados.
-
-## Conceptos Aprendidos
+## 📚 Conceptos Aprendidos
 * Slicing de listas con diferentes parámetros
 
 * Reemplazo de elementos usando slicing
@@ -64,17 +80,10 @@ El objetivo es imprimir diferentes posiciones de la lista, reemplazar un element
 
 * Modificación in-place de listas
 
-## Cómo Usar
-* Clona este repositorio
-
-* Ejecuta el script Python: 
-
-```bash
-    python [nombre-desafio].py
-```
-
 * Observa los resultados y experimenta modificando los valores
 
-### Contribuciones
+### 📌 Contribuir 
 
-Las sugerencias y mejoras son bienvenidas. Abre un issue o envía un pull request.
+Abre un issue 
+
+Haz un fork y envía un pull request  

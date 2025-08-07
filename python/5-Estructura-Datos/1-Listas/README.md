@@ -1,7 +1,6 @@
 # 📋 Ejercicios con Listas en Python
 
-## 📌 Descripción
-Este directorio contiene ejercicios prácticos para dominar el manejo de **listas** en Python, la estructura de datos más versátil del lenguaje.
+Este directorio contiene los ejercicios prácticos para dominar el manejo de **listas** en Python, la estructura de datos más versátil del lenguaje.
 
 ## 🧠 Conceptos Cubiertos
 
@@ -14,7 +13,7 @@ Este directorio contiene ejercicios prácticos para dominar el manejo de **lista
     sub1 = numeros[2:5]             # Slicing
 ```
 
-## Métodos Esenciales
+### Métodos Esenciales
 
 * append(x)	Añade x al final	lista.append(3)
 * insert(i, x)	Inserta x en posición i	lista.insert(0, 'a')
@@ -36,3 +35,9 @@ Este directorio contiene ejercicios prácticos para dominar el manejo de **lista
 
 * Desafío #1: Manipulación listas.
 * Desafío #2: Registro de Criptomonedas.
+
+## 📌 Contribuciones 
+
+* Abre un issue 
+
+* Haz un fork y envía un pull request 

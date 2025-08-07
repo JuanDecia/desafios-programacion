@@ -1,7 +1,16 @@
 # 📊 Estructuras de Datos en Python
 
-## 📌 Descripción
 Este directorio contiene ejercicios y ejemplos prácticos para dominar las estructuras de datos fundamentales en Python:
+
+## 🎯 Objetivos de Aprendizaje
+
+* Diferenciar estructuras mutables vs inmutables
+
+* Dominar operaciones básicas en cada estructura
+
+* Aplicar estructuras anidadas
+
+* Implementar algoritmos eficientes
 
 ## 🧱 Estructuras Cubiertas
 
@@ -62,17 +71,15 @@ Este directorio contiene ejercicios y ejemplos prácticos para dominar las estru
     └── README.md
 ```
 
-## 🎯 Objetivos de Aprendizaje
+## 🔍 Navegación 
 
-* Diferenciar estructuras mutables vs inmutables
+* Clona el repositorio (ejemplo clonacion) 
 
-* Dominar operaciones básicas en cada estructura
+* Navegá hasta un desafío especifico y clonalo (ejemplo) 
 
-* Aplicar estructuras anidadas
+* Ejecuta el script (ejemplo) 
 
-* Implementar algoritmos eficientes
-
-## 💡 Ejercicios Prácticos
+## 💡 Ejercicios Prácticos Recomendados
 
 ### Para Listas:
 
@@ -91,3 +98,9 @@ Este directorio contiene ejercicios y ejemplos prácticos para dominar las estru
 * Encontrar elementos comunes entre dos listas
 
 * Eliminar duplicados de una lista
+
+## 📌 Contribuciones 
+
+* Abre un issue 
+
+* Haz un fork y envía un pull request  

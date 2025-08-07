@@ -16,7 +16,7 @@ Colección de desafíos de programación en **Python**, organizados por temas fu
 
 5. **Estructuras de Datos**  
 
-## 🚀 Cómo Usar  
+## 🔍 Navegación y Uso  
 1. Navega a la carpeta del tema que te interese.  
 2. Abre el `README.md` del desafío para ver:  
    - **Enunciado del problema**.  
