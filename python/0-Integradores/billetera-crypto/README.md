@@ -1,18 +1,13 @@
 # 🏦 Billetera de Criptomonedas
 
-Aplicación para gestionar un portafolio de criptomonedas con:
+## 🎯 Objetivo
+
+Crear una aplicación para gestionar una billetera virtual de criptomonedas con las siguientes características:
+
 - Registro de transacciones
 - Balance en tiempo real
 - Persistencia de datos
 - Precios actualizados vía API
-
-## 🚀 Cómo Usar
-1. Ejecutar el script:
-    ```bash
-        python billeteraCrypto.py
-    ```
-
-* Seguir el menú interactivo
 
 ## 🔧 Requisitos
 
@@ -21,6 +16,23 @@ Aplicación para gestionar un portafolio de criptomonedas con:
 * Librerías: pycoingecko
 
 * API CoinGecko (conexión a internet)
+
+## 🚀 Cómo Usar
+
+1. Clona el repositorio
+
+```bash
+    git clone https://github.com/JuanDecia/desafios-programacion/tree/main/python/0.%20Integradores/billetera-crypto
+```
+
+2. Ejecutar el script
+
+```bash
+    python billeteraCrypto.py
+```
+
+* Seguir el menú interactivo
+* Observa los resultados y experimenta modificando los valores
 
 ## 📌 Estructura de Datos
 
@@ -50,6 +62,7 @@ Aplicación para gestionar un portafolio de criptomonedas con:
 
 * Manejo robusto de errores
 
+
 - Funcionalidades Extendidas:
 
 * Sistema de menú interactivo
@@ -59,6 +72,7 @@ Aplicación para gestionar un portafolio de criptomonedas con:
 * Balance ordenado por valor USD
 
 * Historial detallado de transacciones
+
 
 - Documentación:
 
@@ -80,4 +94,6 @@ Aplicación para gestionar un portafolio de criptomonedas con:
 
 * Exportar a CSV/Excel
 
----
+### 📌 Contribuir
+•	Abre un issue
+•	Haz un fork y envía un pull request 

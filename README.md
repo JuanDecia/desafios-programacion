@@ -51,15 +51,6 @@ El repositorio está organizado por lenguaje de programación y, dentro de cada 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo" title="GitHub"/>
 </p>
 
-## 🚀 Clonar el Repositorio
-
-Para clonar y usar este repositorio localmente:
-
-```bash
-  git clone https://github.com/tu-usuario/tu-repo.git
-  cd tu-repo
-```
-
 ## 🎯 Objetivos
 - Practicar algoritmos y estructuras de datos.
 - Dominar múltiples lenguajes de programación.
@@ -70,8 +61,19 @@ Para clonar y usar este repositorio localmente:
 2. Abre la carpeta del desafío que te interese.
 3. Lee el `README.md` para entender el problema y la solución.
 
+## 🚀 Clonar el Repositorio
+
+Para clonar y usar este repositorio localmente:
+
+```bash
+  git clone https://github.com/tu-usuario/tu-repo.git
+  cd tu-repo
+```
+
 ## 📝 Contribuciones
+
 ¡Agradezco feedback y sugerencias! Si encuentras un error o una optimización, puedes:
+
 - Abrir un **Issue**.
 - Hacer un **Fork** y enviar un *Pull Request*.
 
