@@ -11,9 +11,10 @@ def validar_numero(entrada):
 # Funcion principal, maneja el flujo del programa
 def main():
 
+    # Recibe el número ingresado
     numeroUsuario = solicitar_numero()
 
-    # Ciclo para validar la entrada del usuario
+    # Valida la entrada del usuario
     # Si no es un número, solicita nuevamente
     while not validar_numero(numeroUsuario):
         print("❌ No se reconoció el número ingresado. Intente nuevamente.")

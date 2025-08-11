@@ -8,19 +8,18 @@ Este directorio contiene desafíos prácticos sobre **estructuras condicionales*
 - Operadores lógicos (`and`, `or`, `not`).
 - Condicionales anidados.
 
-## 🗂️ Directorio de un Desafío
+## 🗂️ Estructura del directorio
 
 Cada carpeta dentro de este directorio sigue esta estructura:
 
 ``` bash
-/2-condicionales/
-  ├──desafio-x/
+  ├──nombre-desafio/
     ├── README.md # Explicación del problema
     ├── solucion.py # Código de solución
     └── tests/ # Carpeta opcional para pruebas
 ```
 
-## 🌐 Cómo ejecutar y Navegación
+## 🔍 Uso y Navegación
 
 **1- Clona este repositorio.**
 

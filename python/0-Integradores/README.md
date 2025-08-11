@@ -4,11 +4,11 @@ Este repositorio contiene desafíos prácticos para aplicar conceptos fundamenta
 
 ## 🎯 Objetivos de aprendizaje
 
-• Dominar la creación y uso de funciones en Python
-• Aprender a manipular estructuras de datos complejas
-• Desarrollar habilidades para resolver problemas algorítmicos
-• Practicar el diseño de programas modulares
-• Implementar validaciones y manejo de errores
+* Dominar la creación y uso de funciones en Python
+* Aprender a manipular estructuras de datos complejas
+* Desarrollar habilidades para resolver problemas algorítmicos
+* Practicar el diseño de programas modulares
+* Implementar validaciones y manejo de errores
 
 ## 🔍 Estructura del directorio y navegación
 

@@ -1,93 +1,69 @@
-# 🔄 Validación de Entrada Numérica
+# Bucle While Not
 
-Este programa demuestra el uso del bucle `while not` para validar entradas de usuario hasta que se ingrese un número válido.
+## 🧠 Definición y Concepto
 
-## 📝 Enunciado
+El bucle **while not** es una variante del bucle while tradicional que se ejecuta mientras una condición **NO** sea verdadera. Es particularmente útil cuando queremos:
 
-Escribir un programa que:
+* Esperar hasta que un estado cambie
 
-1. Solicite repetidamente al usuario que ingrese un número
-2. Si el valor ingresado **no es un número**, muestre un mensaje de error y vuelva a pedirlo
-3. Cuando se ingrese un número válido, finalice el programa
+* Verificar que algo deja de ser falso
 
-## 🛠️ Cómo Ejecutar
+* Mantener un bucle hasta que se cumpla una condición negativa
 
-* Ejecutar en terminal:
+## ⚙️ Sintaxis y Funcionamiento
 
-```bash
-    python validacion_numero.py
-```
-
-* Probar con:
-
-```bash
-    Entrada válida: 42
-
-    Entrada inválida: cuarenta y dos
-```
-
-## 🎯 Objetivos de Aprendizaje
-
-* Validación de entradas con bucles
-
-* Uso de métodos de strings (isdigit())
-
-* Control de flujo con condicionales negados (not)
-
-## 💡 Mejoras Posibles
-
-* Aceptar números negativos:
+### Sintaxis
 
 ```python
-
-    def solicitar_numero():
-        return input("Ingrese un número entero: ").strip()
-
-    Valida si la entrada es un número entero (positivo o negativo)
-    def validar_numero(entrada): 
-        return entrada.lstrip('-').isdigit()
+    while not condición:
+        # Bloque de código que se ejecuta
+        # mientras la condición sea FALSA
 ```
 
-* Aceptar decimales:
+### Funcionamiento
+
+1. Evalúa si la condición es False (por el not)
+
+2. Si es False, ejecuta el bloque de código
+
+3. Vuelve a evaluar la condición
+
+4. Sale del bucle cuando la condición se hace True
+
+## 📝 Ejemplo Práctico
 
 ```python
-    def is_number(s):
-        try:
-            float(s)
-            return True
-        except ValueError:
-            return False
+# Ejemplo: Esperar hasta que el usuario ingrese "salir"
+comando = ""
+    while not comando == "salir":
+        comando = input("Ingrese un comando ('salir' para terminar): ")
+        print(f"Ejecutando: {comando}")
+        print("Programa terminado")
 ```
 
-* Límite de intentos:
+### ⚠️ Consideraciones Importantes
 
-```python
-    def main():
-    intentos = 3
-    numero_usuario = solicitar_numero()
-    
-    while not validar_numero(numero) and intentos > 1:
-        intentos -= 1
-        print(f"❌ Entrada inválida. Intentos restantes: {intentos}")
-        numero_usuario = solicitar_numero()
-    
-    if validar_numero(numero):
-        print(f"✅ Aceptado: {int(numero)}")
-    else:
-        print("⚠️ Has agotado tus intentos")
+* Condición de salida: Asegúrate que la condición eventualmente se haga True para evitar bucles infinitos
+
+* Legibilidad: A veces es más claro usar while not que su equivalente con while y operadores lógicos
+
+* Alternativas: Puedes lograr lo mismo con while condición == False pero while not es más idiomático en Python
+
+## 📁 Estructura de Directorio
+
+```text
+└── /Subtema/
+	├── README.md
+	├── [directorio-desafio]/
+           ├── solucion-desafio.py
+           └── README.md
 ```
 
 ## 🏆 Desafíos Propuestos
 *(Este listado se actualizará conforme se añadan ejercicios)*
 
-* while-not
+* Validación número: Programa para ejecutar una validación de un número utilizando el bucle **while not**
 
----
-
-## Este README:
-
-✅ Explica claramente el objetivo  
-✅ Incluye código listo para copiar  
-✅ Muestra visualmente el flujo  
-✅ Sugiere mejoras escalables  
-✅ Propone estructura de archivos  
+## 📌 Contribuciones y Mejoras
+•	Abre un issue
+•	Haz un fork y envía un pull request

@@ -1,20 +1,6 @@
 # 🔄 Bucles en Python
+
 Ejercicios para dominar estructuras repetitivas en Python
-
-## 📌 Estructura del Directorio
-
-```bash
-    /python/  
-    └── 3-bucles/  
-        ├── 1-tipo-bucle/               # Directorio del tipo de bucle  
-        │   ├── directorio-desafio/     # Nombre directorio del desafío
-        │   │   ├── solucion.py         # Código desafío  
-        │   │   ├── README.md           # Recursos desafío
-        │   ├── README.md               # Documentación directorio
-        ├── 2-tipo-bucle/                   
-        │   ├── ...  
-        └── README.md                   # Este archivo
-```
 
 ## 🎯 Objetivos de Aprendizaje
 
@@ -25,8 +11,6 @@ Ejercicios para dominar estructuras repetitivas en Python
 * Combinar bucles con estructuras de control
 
 * Optimizar código evitando bucles infinitos
-
-## 💡 Ejercicios Disponibles
 
 ### 🔁 Bucles `while`
 
@@ -48,39 +32,37 @@ Ejercicios para dominar estructuras repetitivas en Python
 |-----------------|---------------------------------|--------------|
 | [Patrones]()    | Dibuja patrones con asteriscos  | 🔴 Avanzado  |
 
-## 🚀 Cómo Usar Estos Ejercicios
+## 📁 Estructura del Directorio
 
-* Navega al directorio del ejercicio:
+```bash
+    /python/  
+    └── 3-bucles/  
+        ├── 1-tipo-bucle/               # Directorio del tipo de bucle  
+        │   ├── directorio-desafio/     # Nombre directorio del desafío
+        │   │   ├── solucion.py         # Código desafío  
+        │   │   ├── README.md           # Recursos desafío
+        │   ├── README.md               # Documentación directorio
+        ├── 2-tipo-bucle/                   
+        │   ├── ...  
+        └── README.md                   # Este archivo
+```
+
+## 🔍 Uso y Navegación
+
+**1. Navega al directorio del ejercicio:**
 
 ```bash
     cd python/3-bucles/2-for/tablas-multiplicar
 ```
 
-* Ejecuta el script:
+**2. Ejecuta el script:**
 
 ```bash
     python solucion.py
 ```
-* Modifica el código para experimentar
 
-## ✨ Características Clave
+**3. Modifica el código para experimentar**
 
-✅ Estructura modular: Cada ejercicio en su carpeta con:
-
-* solucion.py (Código base)
-
-* README.md (Instrucciones específicas)
-
-* tests/ (Carpeta opcional para pruebas)
-
-✅ Metadatos útiles:
-
-* Niveles de dificultad visuales (emojis)
-
-* Tablas organizadas con enlaces
-
-✅ Enfoque pedagógico:
-
-* Progresión de conceptos (básico → avanzado)
-
-* Vinculación con documentación externa
+## 📌 Contribuciones
+•	Abre un issue
+•	Haz un fork y envía un pull request
