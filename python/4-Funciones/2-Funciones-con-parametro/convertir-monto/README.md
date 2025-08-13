@@ -1,4 +1,4 @@
-# 📊 Desafío: Conversión de Criptomonedas a USD
+# 📊 Desafío #1: Conversión de Criptomonedas a USD
 
 Este desafío consiste en crear una función (Función conversionCriptomoneda()) que calcule el valor total en dólares estadounidenses (USD) de una cantidad acumulada de Bitcoin (BTC) y Ripple (XRP), utilizando tasas de conversión fijas.
 
@@ -55,16 +55,17 @@ Modifica los valores para probar diferentes cantidades:
 
 **Entrada**:
 
-```python
-    conversionCriptomoneda(15, 30)
-    conversionCriptomoneda(4, 22)
+```bash
+    Ingrese la cantidad de BTC: 1
+    Ingrese la cantidad de XRP: 1
 ```
 
 **Salida**:
 
 ```text
-    La suma de la cantidad de sus monedas es de USD$: 769.82946
-    La suma de la cantidad de sus monedas es de USD$: 214.541604
+    BTC ingresados: 1
+    XRP ingresados: 1
+    La suma de la cantidad de sus monedas es de USD$: 50.66
 ```
 
 ## 📚 Conceptos Aprendidos
@@ -84,31 +85,13 @@ Modifica los valores para probar diferentes cantidades:
 1. Añadir más criptomonedas (ETH, SOL, etc.).
 2. Usar APIs para tasas en tiempo real (ejemplo: CoinGecko).
 
-## 💡 Mejoras y Recomendaciones
+## 🔥 Últimas mejoras aplicadas
 
-**Modularizar tasas de cambio:**
-
-```python
-    TASAS = {"BTC": 50, "XRP": 0.660982}  # Diccionario global
-    Validar entradas (evitar valores negativos o strings):
-```
-
-```python
-    if cantBTC < 0 or cantXRP < 0:
-        raise ValueError("Las cantidades no pueden ser negativas")
-```
-
-Retornar el valor en lugar de solo imprimirlo:
-
-```python
-    return valortotalUSD  # Para usar en otros cálculos
-```
-
-Formatear salida con 2 decimales:
-
-```python
-    print(f"Total USD: {valortotalUSD:.2f}")
-```
+✅ Función **main()** que controla el programa  
+✅ Formato de impresión para combinar valores y texto
+✅ Funcion para convertir monedas y solicitar datos al usuario
+✅ Se validan los datos que ingresa el usuario
+✅ La funcion retorna 2 decimales
 
 ## 📌 Contribuir
 
