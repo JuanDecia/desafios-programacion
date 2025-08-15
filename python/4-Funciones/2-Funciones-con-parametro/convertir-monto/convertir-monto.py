@@ -1,46 +1,100 @@
-# Solicitar datos al usuario
-def solicitarDatos():
+import requests
 
-    # Verifica que BTC y XRP sean números
-    while True:
-        try:
-            btc = float(input("Ingrese la cantidad de BTC: "))
-            xrp = float(input("Ingrese la cantidad de XRP: "))
-            break
-        except ValueError:
-            print("Por favor, ingrese valores numéricos válidos.")
+# Recibir valores de la criptomoneda
+def get_price(cripto: str) -> float:
 
-    return btc, xrp
-
-# Convertir datos solicitados
-def conversionCriptomoneda(cantBTC,cantXRP):
-    
-    TASAS = {
-        "BTC": 50,
-        "XRP": 0.660982
+    #1 Mapeo Criptos
+    criptos = {
+        "BTC": "bitcoin",
+        "ETH": "ethereum",
+        "LTC": "litecoin"
     }
 
-    # Calcula el total de la cantidad con el valor de las tasas
-    totalUSD = (cantBTC * TASAS["BTC"]) + (cantXRP * TASAS["XRP"])
+    #2 Convertir entrada a mayúsculas y validar
+    cripto.upper()
+    if cripto not in criptos:
+        print(f"Criptomoneda {cripto} no soportada.")
+        return None
 
-    # Redondea a 2 decimales
-    totalUSD = round(totalUSD, 2)
+    #3 Construcción url API
+    url = f"https://api.coingecko.com/api/v3/simple/price?ids={criptos[cripto]}&vs_currencies=usd"
 
-    return str(totalUSD)
+    #4 Petición y manejo de errores
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # Verifica si la solicitud fue exitosa
+        data = response.json()
+        price = data[criptos[cripto]]['usd']
 
-# Función Ejecutadora
+        return float(price)
+        
+    except requests.exceptions.RequestException as e:
+        print(f"Error al obtener el precio de {cripto}: {e}")
+        return None
+    
+# Convierte una cantidad de criptomoneda a usd
+def conversion(cantidad: str, cripto: str) -> float:
+
+    """
+    Args:
+        cripto: Símbolo de la criptomoneda (ej: 'BTC')
+        cantidad: Cantidad a convertir (debe ser > 0)
+    
+    Returns:
+        Valor en USD o None si hay error
+    """
+
+    # 1. Validar criptomoneda
+    precio = get_price(cripto)
+    if precio is None:
+        print(f"Error: No se pudo obtener el precio de la {cripto}")
+        return None
+
+    # 2. Validad cantidad
+    if cantidad <= 0:
+        print("Error: la cantidad debe ser positiva")
+        return None
+    
+    # 3. Calcular y retornar los valores
+    total_usd = float(cantidad * precio)
+    print(f"{cantidad} {cripto.upper()} son ${total_usd:.2f} USD")
+    return total_usd
+
+# Función ejecutadora del programa
 def main():
-
-    #Paso 1: Datos del usuario
-    btc, xrp = solicitarDatos()
-
-    #Paso 2: Conversión de criptomonedas
-    conversionCriptomoneda(btc, xrp)
-
-    #Paso 3: Mostrar resultados
-    print(f"BTC ingresados: {btc}")
-    print(f"XRP ingresados: {xrp}")
-    print(f"La suma de la cantidad de las monedas ingresadas es de USD$: {conversionCriptomoneda(btc, xrp)}")
+    print("=== CONVERTIDOR DE MONEDAS ===")
+    
+    while True:  # Bucle principal
+        # 1. Pedir cripto
+        while True:
+            cripto = input("\nIngrese cripto (BTC/ETH/LTC): ").upper()
+            if cripto in ["BTC", "ETH", "LTC"]:
+                break
+            print("Cripto no válida")
+        
+        # 2. Pedir cantidad
+        while True:
+            try:
+                cantidad = float(input("Ingrese cantidad: "))
+                if cantidad > 0:
+                    break
+                print("Debe ser positivo")
+            except ValueError:
+                print("Ingrese un número válido")
+        
+        # 3. Convertir
+        resultado = conversion(cantidad, cripto)
+        
+        # 4. Preguntar por otra conversión
+        while True:
+            continuar = input("\n¿Otra conversión? (s/n): ").lower()
+            if continuar in ("s", "n"):
+                break
+            print("Ingrese 's' o 'n'")
+        
+        if continuar == "n":
+            print("\n¡Gracias por usar el conversor!")
+            break
 
 if __name__ == "__main__":
     main()

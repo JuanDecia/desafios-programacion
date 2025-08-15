@@ -1,51 +1,49 @@
 # 📊 Desafío #1: Conversión de Criptomonedas a USD
 
-Este desafío consiste en crear una función (Función conversionCriptomoneda()) que calcule el valor total en dólares estadounidenses (USD) de una cantidad acumulada de Bitcoin (BTC) y Ripple (XRP), utilizando tasas de conversión fijas.
+Este desafío consiste en crear una función (Función conversionCriptomoneda()) que calcule el valor total en dólares estadounidenses (USD) de una cantidad acumulada de dos criptomonedas, utilizando tasas de conversión desde una api.
 
 ## 🎯 Enunciado y Requisitos
 
-1. Crear una función llamada conversionCriptomoneda que reciba dos parámetros:
+1. Crear una función llamada conversionCriptomoneda que reciba dos criptomonedas.
 
-* cantBTC: Cantidad de Bitcoin (BTC)
-* cantXRP: Cantidad de Ripple (XRP)
+2. La función debe calcular el valor total en USD basado en tasas de conversión a través de la API.
 
-2. La función debe calcular el valor total en USD basado en tasas de conversión predefinidas:
+3. Solicitar ingreso del nombre de la criptomoneda y la cantidad
 
-* BTCUSD = 50 (1 BTC = 50 USD)
-* XRPUSD = 0.660982 (1 XRP ≈ 0.660982 USD)
+4. Validar las entradas de datos para un sistema robusto.
 
-3. Mostrar el resultado formateado en un mensaje legible.
+5. Mostrar el resultado formateado en un mensaje legible.
 
 **Requisitos obligatorios**
 * La función debe llamarse conversionCriptomoneda.
-* Debe aceptar exactamente dos parámetros (cantBTC, cantXRP).
+* Validar entrada de números y nombres de las cripto.
 * Debe retornar el valor total en USD.
 * El resultado debe imprimirse en consola con un mensaje claro.
 
 ## 🔧 Requisitos Técnicos
 
-Python 3.8+ (Recomendado 3.10+)
+* Python 3.8+ (Recomendado 3.10+)
 
-No se requieren librerías externas (solo Python estándar)
+* Instalar e importar librería requests
 
-Editor de código (VS Code, PyCharm, Jupyter Notebook, etc.)
+* Editor de código (VS Code, PyCharm, Jupyter Notebook, etc.)
 
 ## 🌐 Cómo Usar
 
-Clona el repositorio:
+1. Clona el repositorio:
 
 ```bash
     git clone https://github.com/tu-usuario/cripto-conversor.git
     cd cripto-conversor
 ```
 
-Ejecuta el script (guardado como cripto_conversor.py):
+2. Ejecuta el script (guardado como cripto_conversor.py):
 
 ```bash
     python cripto_conversor.py
 ```
 
-Modifica los valores para probar diferentes cantidades:
+3. Modifica los valores para probar diferentes cantidades:
 
 ```python
     conversionCriptomoneda(10, 5000)  # Ejemplo adicional
@@ -92,6 +90,8 @@ Modifica los valores para probar diferentes cantidades:
 ✅ Funcion para convertir monedas y solicitar datos al usuario
 ✅ Se validan los datos que ingresa el usuario
 ✅ La funcion retorna 2 decimales
+✅ Validación de nombre de criptomonedas
+✅ Importar valores reales de criptomonedas
 
 ## 📌 Contribuir
 
