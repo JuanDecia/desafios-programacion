@@ -80,18 +80,6 @@ Dentro de los conceptos principales, se desatacan las siguientes característica
     print(potencia(3, 3)) # 27
 ```
 
-### Función con retorno múltiple
-
-```python
-    def operaciones_basicas(a, b):
-        suma = a + b
-        resta = a - b
-        return suma, resta  # Retorna tupla
-
-    s, r = operaciones_basicas(10, 5)
-    print(f"Suma: {s}, Resta: {r}")  # Suma: 15, Resta: 5
-```
-
 ## 📚 Niveles de funciones
 
 * Básico: Funciones simples sin parámetros
