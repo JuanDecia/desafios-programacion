@@ -16,6 +16,8 @@ Este programa en Python calcula el valor actual de una criptomoneda en USD y pro
 
 * Python 3.8+
 * Librería Requests (instalación e importación)
+* Librería time
+* Librería Json
 * IDE
 
 ## 🌐 Cómo Usarlo
@@ -76,6 +78,10 @@ Proyección en 5 días (+5% diario): $5105.13
 ## 📌 Posibles Mejoras
 
 Interfaz gráfica con tkinter o streamlit.
+
+## Mejoras Aplicadas
+
+* Menu interactivo para el usuario.
 
 ## 📄 Licencia
 
