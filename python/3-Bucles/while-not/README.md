@@ -62,7 +62,10 @@ comando = ""
 ## 🏆 Desafíos Propuestos
 *(Este listado se actualizará conforme se añadan ejercicios)*
 
-* Validación número: Programa para ejecutar una validación de un número utilizando el bucle **while not**
+1. Validación número: Programa para ejecutar una validación de un número utilizando el bucle **while not**
+
+2. Validación Criptos: este desafío demuestra cómo validar que un valor ingresado por el usuario esté presente en un array predefinido de criptomonedas, utilizando un bucle while para garantizar la entrada correcta.
+
 
 ## 📌 Contribuciones y Mejoras
 •	Abre un issue
