@@ -1,6 +1,6 @@
 # Instrucciones Desafío
 
-* Generar una estructura HTML con contenido para un cv. El archivo debe contar con la siguiente estructura:
+* Generar una estructura HTML con contenido para un camperbot. El archivo debe contar con la siguiente estructura:
 
     1. Indicar la version HTML.
     2. Generar Estructura HTML.
