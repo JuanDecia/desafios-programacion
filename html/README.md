@@ -41,7 +41,7 @@ Editor: VS Code
 
 Navegadores: Chrome, Firefox (con DevTools), Edge
 
-Extensión: Live Server (VS Code)
+Extensión: Live Server (VS Code), Prettier (formateo automático)
 
 ## 📌 Contribuciones  
 
