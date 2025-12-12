@@ -10,6 +10,26 @@ El repositorio está organizado por lenguaje de programación y, dentro de cada 
 
 ``` bash
   /
+  ├── html/                                 # Lenguaje  Principal
+  │  ├── README.md                          # Documentacion Principal
+  │  ├── [directorio-tema]                  # Tema
+  │  │  ├── README.md                       # Documentacion Tema
+  │  │  ├── [directorio-desafio]            # Directorio Desafío
+  │  │  │  ├── README.md                    # Instrucciones e Info Desafío
+  │  │  │  ├── [nombre-archivo-desafio]     # Archivo Desafío
+  │  │  ├── ...
+  │  ├── ...
+  ├── javascript/
+  │  ├── 0-Integradores/                 
+  │  │  ├── README.md
+  │  │  ├── [directorio-integrador]
+  │  │  │  ├── [nombre-desafio-integrador]
+  │  │  │  ├── README.md
+  │  │  │  ├── ...
+  │  ├── 1-variables y Tipo de Datos/    
+  │  │  ├── README.md                    
+  │  │  ├── [directorio-desafío]             
+  │  └── ... 
   ├── python/                               # Lenguaje  Principal
   │  ├── 0-Integradores/                    # Tema
   │  │  ├── README.md                       # Documentacion
@@ -21,28 +41,19 @@ El repositorio está organizado por lenguaje de programación y, dentro de cada 
   │  │  ├── README.md                    
   │  │  ├── [directorio-desafío]             
   │  └── ... 
-  ├── javascript/
-  │  ├── 0-Integradores/                 
-  │  │  ├── README.md
-  │  │  ├── [directorio-integrador]/
-  │  │  │  ├── [nombre-desafio-integrador]
-  │  │  │  ├── README.md
-  │  │  │  ├── ...
-  │  ├── 1-variables y Tipo de Datos/    
-  │  │  ├── README.md                    
-  │  │  ├── [directorio-desafío]             
-  │  └── ... 
-  ├── ...
 
 ```
 
 ## 🛠️ Tecnologías Usadas  
 <p align="left">
-  <!-- Python -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" title="Python"/>
+  <!-- HTML -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html/html-original.svg" height="40" alt="html logo" title="JavaScript"/>
   <img width="12" />
   <!-- JavaScript -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" title="JavaScript"/>
+  <img width="12" />
+  <!-- Python -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" title="Python"/>
   <img width="12" />
   <!-- Git -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo" title="Git"/>

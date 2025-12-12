@@ -46,7 +46,8 @@ Cada carpeta dentro de este directorio sigue esta estructura:
 
 ## ✅ Desafíos Realizados
 
-* FizzBuzz
+* Descuento: Programa para calular un descuento posterior a una compra.
+* FizzBuzz: Programa que define un condicional que define si un número es par o no.
 
 ## 📌 Contribuciones
 •	Abre un issue
