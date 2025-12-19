@@ -5,7 +5,7 @@
     1. Introducir !DOCTYPE html.
     2. Generar Estructura HTML y colocar el atributo lang en "en".
     3. Completar meta información necesaria.
-    4. Agregar un título a la página con el nombre "Hotel Feedback Form".
+    4. Agregar un título a la página con el nombre "Final Exam Table".
     5. En el cuerpo generar una estructura semántica correcta con los siguientes elementos obligatorios:
 
         * Un header con un título con texto "Results Final Exam".
