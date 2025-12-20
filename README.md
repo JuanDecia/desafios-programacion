@@ -10,13 +10,22 @@ El repositorio está organizado por lenguaje de programación y, dentro de cada 
 
 ``` bash
   /
-  ├── html/                                 # Lenguaje  Principal
+  ├── css/                                  # Lenguaje  Principal
   │  ├── README.md                          # Documentacion Principal
   │  ├── [directorio-tema]                  # Tema
   │  │  ├── README.md                       # Documentacion Tema
   │  │  ├── [directorio-desafio]            # Directorio Desafío
   │  │  │  ├── README.md                    # Instrucciones e Info Desafío
   │  │  │  ├── [nombre-archivo-desafio]     # Archivo Desafío
+  │  │  ├── ...
+  │  ├── ...
+  ├── html/                                 
+  │  ├── README.md
+  │  ├── [directorio-tema]
+  │  │  ├── README.md
+  │  │  ├── [directorio-desafio]
+  │  │  │  ├── README.md
+  │  │  │  ├── [nombre-archivo-desafio]
   │  │  ├── ...
   │  ├── ...
   ├── javascript/
@@ -46,8 +55,11 @@ El repositorio está organizado por lenguaje de programación y, dentro de cada 
 
 ## 🛠️ Tecnologías Usadas  
 <p align="left">
+  <!-- CSS -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS logo" title="CSS"/>
+  <img width="12" />
   <!-- HTML -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html/html-original.svg" height="40" alt="html logo" title="JavaScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML logo" title="HTML"/>
   <img width="12" />
   <!-- JavaScript -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" title="JavaScript"/>
