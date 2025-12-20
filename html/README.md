@@ -19,6 +19,7 @@ HTML (HyperText Markup Language), el lenguaje fundamental para construir página
 
 0. **HTML Básico**
 1. **Formularios y Tablas**
+2. **Accesibilidad**
 
 ## 🔍 Navegación y Uso 
 
