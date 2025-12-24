@@ -1,0 +1,1 @@
+* En este desafío el objetivo es utilizar HTML y CSS para realizar el diseño de un menú. Buscá la imagen de algún menú de cafetería e intentá replicarlo.
