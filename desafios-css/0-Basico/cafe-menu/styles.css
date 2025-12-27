@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 60%;
+    box-shadow: -2px 0px 54px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 0px 54px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 54px 5px rgba(0,0,0,0.75);
+    background-color: aliceblue;
+}
+
+/* ESTILOS HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 9em;
+    color: #567568;
+}
+
+/* ESTILOS CONTENIDO PRINCIPAL */
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 2%;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    color: #5a9b57de;
+}
+
+h4 {
+    width: 100%;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+article h4:first-of-type {
+    margin-bottom: 7px;
+}
+
+div {
+    padding: 20px;
+    border: 3px solid #567568;
+}
+
+div > p {
+    font-size: 1.7em;
+    font-weight: 300;
+    color: #567568;
+    text-align: center;
+}
+
+/* ESTILOS FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
