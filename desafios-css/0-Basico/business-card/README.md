@@ -1,0 +1,1 @@
+En este desafío se debe realizar una tarjeta de negocios utilizando los conocimientos de CSS básicos.
