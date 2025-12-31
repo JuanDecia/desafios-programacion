@@ -89,3 +89,19 @@ footer {
     justify-content: center;
     margin-top: 20px;
 }
+
+/* ###### MEDIA QUERIES ###### */
+
+@media (max-width: 768px) {
+    main {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    div > p {
+        font-size: 1.3em;
+    }
+}
