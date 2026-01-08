@@ -27,4 +27,8 @@ Footer:
 
 - Los íconos del título colocarlos con las propiedades "::after" y "::before" de CSS.
 
+- El elemento <main> debe tener un efecto "hover" que agrande un poco el elemento y cambie de color el fondo diferente al establecido.
+
 - Los botones deben tener un fondo diferente al elemento <main>.
+
+- Los botones deben tener un efecto "hover" que cambien el color de fondo que sea diferente al establecido.
