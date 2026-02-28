@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: midnightblue;
+    color: whitesmoke;
+}
+
+main {
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff1a;
+    box-shadow: -1px 10px 7px 4px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -1px 10px 7px 4px rgba(0,0,0,0.59);
+    -moz-box-shadow: -1px 10px 7px 4px rgba(0,0,0,0.59);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    padding: 10px;
+}
+
+form fieldset:nth-child(even) {
+    margin: 40px 0;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 156, 156)
+}
+
+legend {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.input-cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+}
+
+label {
+    width: 100%;
+    font-size: 1.1em;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(168, 156, 156);
+    border-radius: 5px;
+    background-color: #ffffff1a;
+    color: whitesmoke;
+}
+
+input::placeholder {
+    color: #ffffffa8;
+}
+
+.radio-cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.radio-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;            
+  width: 100%;         
+}
+
+textarea {
+    border-radius: 5px;
+    background-color: #ffffff1a;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: whitesmoke;
+}
+
+button:hover {
+    background-color: midnightblue;
+}
+
+footer {
+    margin-top: 20px;
+}

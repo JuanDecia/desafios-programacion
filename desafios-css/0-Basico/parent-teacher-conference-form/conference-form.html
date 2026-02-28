@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A form for scheduling parent-teacher conferences, collecting student information, parent details, preferred contact method, and additional concerns.">
+    <meta name="keywords" content="parent-teacher conference, student information, contact method, additional concerns, school form">
+    <meta name="author" content="Juan Decia">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Title Page -->
+    <title>Conference Form</title>
+
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Parent-Teacher Conference Form</h1>
+
+            <p>Fill out this form to schedule a parent-teacher conference.</p>
+        </header>
+        <section>
+
+            <!-- Form -->
+            <form action="#" method="post">
+
+                <!-- Fieldset #1 -->
+                <fieldset>
+                    <!-- Title Fieldset -->
+                    <legend>Student Information</legend>
+
+                    <div class="input-cont">
+                        <label for="student-name">Student Full Name:</label>
+                        <input type="text" id="student-name" name="student-name" placeholder="e.g., Juan Decia" required>
+                    </div>
+    
+                    <div class="input-cont">
+                        <label for="student-grade">Current Grade:</label>
+                        <input type="text" id="student-grade" name="student-grade" placeholder="e.g., 4" required>
+                    </div>
+                </fieldset>
+
+                <!-- Fieldset #2 -->
+                <fieldset>
+                    <!-- Title Fieldset -->
+                    <legend>Parent/ Guardian Information</legend>
+
+                    <label for="parent-name">Parent Name:</label>
+                    <input type="text" id="parent-name" name="parent-name" placeholder="e.g., Juan Decia" required>
+                </fieldset>
+
+                <!-- Fieldset #3 -->
+                <fieldset>
+                    <!-- Title Fieldset -->
+                    <legend>Preferred Contact Method</legend>
+                    <label class="radio-label">Email:
+                        <input type="radio" name="contact-method" value="email" required>
+                    </label>
+                    <label class="radio-label">Phone:
+                        <input type="radio" name="contact-method" value="phone" required> 
+                    </label>
+                </fieldset> 
+
+                <!-- Fieldset #4 -->
+                <fieldset>
+                <!-- Title Fieldset -->
+                <legend>Additional Information</legend>
+
+                <label for="additional-information">Any Specific Concerns or Topic you'd like to discuss:</label>
+                <textarea name="additional-information" id="additional-information" rows="10" cols="105"></textarea>
+                </fieldset>
+
+                <div class="button-container">
+                    <button type="submit">Submit Form</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 School Name. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
