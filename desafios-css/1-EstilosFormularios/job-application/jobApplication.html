@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="application form for job application">
+    <meta name="keywords" content="job,jobApplication,application form,form">
+    <meta name="author" content="Juan Decia">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title> Job Application Form</title>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- Title -->
+            <h1>Job Application Form</h1>
+
+            <!-- Form Section -->
+            <form action="">
+
+                <!-- Input Name -->
+                <div class="input-group">
+                    <label for="name">Full Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                </div>
+
+                <!-- Input Email -->
+                <div class="input-group">
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+
+                <!-- Input Position -->
+                <div class="input-group">
+                    <label for="position">Position: </label>
+                    <select name="position" id="position" required>
+                        <option value="" selected>Select a position</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="manager">Manager</option>
+                    </select>
+                </div>
+                
+                <!-- Filedset Section -->
+                <fieldset>
+                    <legend>Availability</legend>
+                    <div class="radio-group">
+                        <label for="">
+                            <input type="radio" name="availability" value="full-time" checked> Full-Time
+                        </label>
+                        <label for="">
+                            <input type="radio" name="availability" value="part-time"> Part-Time
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <label>Why do you want this job?</label>
+                <textarea name="" id="" rows="5" cols="125" placeholder="Write your motivation"></textarea>
+                </fieldset>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
