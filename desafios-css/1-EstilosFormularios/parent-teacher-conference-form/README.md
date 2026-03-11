@@ -1,5 +1,5 @@
 # 📝 Instrucciones del Desafío - Parent Teacher Conference Form
-Simular un formulario para completar con los personales de un padre de un alumno.
+Simular un formulario para completar con los datos personales de un padre de un alumno.
 
 ## 🏗️ Estructura HTML 
 Semantica Main, Header, Section, Article Footer:
